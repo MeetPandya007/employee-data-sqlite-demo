@@ -40,13 +40,13 @@ extension TableViewController : UITableViewDelegate, UITableViewDataSource{
             vw.removeFromSuperview()
         }
         let nameLable = UILabel(frame: CGRect(x: 10, y: 5, width: self.view.frame.size.width - 10, height: 30))
-        nameLable.textColor = UIColor.white
+        nameLable.textColor = UIColor.black
         nameLable.font = UIFont.boldSystemFont(ofSize: 20.0)
         nameLable.text = userData[indexPath.row].name
         
         
         let designationLable = UILabel(frame: CGRect(x: 10, y: 35, width: self.view.frame.size.width - 10, height: 30))
-        designationLable.textColor = UIColor.white
+        designationLable.textColor = UIColor.black
         designationLable.font = UIFont.boldSystemFont(ofSize: 16.0)
         designationLable.text = userData[indexPath.row].designation
         cell?.addSubview(nameLable)

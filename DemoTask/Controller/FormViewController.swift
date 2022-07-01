@@ -43,9 +43,20 @@ class FormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let appearance = UITabBarItem.appearance()
-        let attributes = [NSAttributedString.Key.font:UIFont(name: "American Typewriter", size: 20)]
-        appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+//        let appearance = UITabBarItem.appearance()
+//        let attributes = [NSAttributedString.Key.font:UIFont(name: "American Typewriter", size: 20)]
+//        appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+        
+        let tabBarAppearance = UITabBarAppearance()
+        let tabBarItemAppearance = UITabBarItemAppearance()
+
+        tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.font:UIFont(name: "American Typewriter", size: 20)]
+        tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.font:UIFont(name: "American Typewriter", size: 20)]
+
+        tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
+
+        self.tabBarController?.tabBar.standardAppearance = tabBarAppearance
+        self.tabBarController?.tabBar.scrollEdgeAppearance = tabBarAppearance
         
             cityDropDown.optionArray = ["Ahmedabad", "Hyderabad", "Delhi", "Mumbai"]
         

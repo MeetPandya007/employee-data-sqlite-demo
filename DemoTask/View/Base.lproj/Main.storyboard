@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eAT-MD-xFi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="749"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="75" id="XTZ-VH-IHM">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="75"/>
@@ -32,12 +32,12 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Cu-Mc-NeZ"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3Cu-Mc-NeZ" firstAttribute="bottom" secondItem="eAT-MD-xFi" secondAttribute="bottom" id="1Cu-zK-GzQ"/>
                             <constraint firstItem="3Cu-Mc-NeZ" firstAttribute="trailing" secondItem="eAT-MD-xFi" secondAttribute="trailing" id="2VU-Zb-4Fo"/>
                             <constraint firstItem="eAT-MD-xFi" firstAttribute="leading" secondItem="3Cu-Mc-NeZ" secondAttribute="leading" id="7VO-IC-62l"/>
-                            <constraint firstItem="eAT-MD-xFi" firstAttribute="top" secondItem="3Cu-Mc-NeZ" secondAttribute="top" id="SCW-Tj-WKP"/>
+                            <constraint firstItem="eAT-MD-xFi" firstAttribute="top" secondItem="3Cu-Mc-NeZ" secondAttribute="top" constant="20" id="SCW-Tj-WKP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="View Employee" id="xkM-9K-HGe"/>
@@ -222,7 +222,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PZI-DI-JZP"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PZI-DI-JZP" firstAttribute="trailing" secondItem="RZx-vm-qEM" secondAttribute="trailing" constant="20" id="0zC-hJ-7of"/>
                             <constraint firstItem="PZI-DI-JZP" firstAttribute="trailing" secondItem="M3R-tD-yvp" secondAttribute="trailing" constant="20" id="1cD-H4-Xlg"/>
@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5H-CW-odP">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyD-M6-0JX">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="637"/>
@@ -591,7 +591,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TmZ-ZJ-XiZ"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vyD-M6-0JX" firstAttribute="height" secondItem="TmZ-ZJ-XiZ" secondAttribute="height" priority="250" id="7Wp-GZ-FKV"/>
                             <constraint firstItem="TmZ-ZJ-XiZ" firstAttribute="bottom" secondItem="c5H-CW-odP" secondAttribute="bottom" id="B6Z-Yg-zWL"/>
@@ -624,9 +624,8 @@
         <!--Navigation Controller-->
         <scene sceneID="HhQ-SV-y4Z">
             <objects>
-                <navigationController id="DcK-Q0-WU9" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="DcK-Q0-WU9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OrC-Pl-2Dd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -645,12 +644,15 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Ut-aV-3eT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -670,12 +672,6 @@
         <image name="square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
